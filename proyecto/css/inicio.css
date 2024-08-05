@@ -1,0 +1,142 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fondo negro */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #000;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.banner {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+}
+
+.banner img {
+    width: 100%;
+    max-height: 400px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 80%;
+    margin: -40px auto 20px; 
+    background: transparent;
+    padding: 10px;
+}
+
+.profile-image {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 230px;
+    margin-top: -80px; 
+}
+
+.text-info {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-right: 560px;
+}
+
+.text-info h1, .text-info p {
+    margin: 0;
+}
+
+.action-buttons {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.follow-btn, .heart-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.follow-btn {
+    width: 130px; 
+    height: auto;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+/* Estilos para tabletas (dispositivos con ancho de 768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner img, .profile {
+        width: 100%;
+    }
+
+    .profile-image {
+        margin-right: 20px;
+        margin-top: 0;
+    }
+
+    .text-info {
+        margin-right: 20px;
+    }
+}
+
+/* Estilos para dispositivos móviles (menos de 768px de ancho) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .banner img, .profile {
+        width: 100%;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        margin-right: 10px;
+        margin-top: 0;
+    }
+
+    .text-info {
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+
+    .action-buttons {
+        margin-top: 20px;
+    }
+}
